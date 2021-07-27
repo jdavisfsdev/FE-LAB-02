@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 export default class RickMortyMain extends Component {
     state = {
-      name: '',
-      image: ''
+      players: []
     };
     render() {
       return (
