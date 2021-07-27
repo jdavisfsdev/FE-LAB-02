@@ -8,5 +8,8 @@ describe('PlayersMain component', () => {
 
     screen.getByText('Almost...');
 
+    await screen.findByRole('ul');
+    
+
   });
 });
