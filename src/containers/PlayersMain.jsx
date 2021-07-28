@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import PlayerList from '../components/PlayerList';
 
-const getPlayers = async () => {
+export const getPlayers = async () => {
   const res = await fetch('https://www.balldontlie.io/api/v1/players');
   const json = await res.json();
   return json.data;
