@@ -7,7 +7,7 @@ import './PlayerList.css';
 export default function PlayerList({ players }) {
   
   const playerEl = players.map((player) => (
-    <li key={player.id} className = "listItem"> <Link to={`/${player.id}`} >
+    <li key={player.id} className = "listItem"> <Link to={`/api/${player.id}`} >
       <PlayerItem 
         first_name={player.first_name}
         last_name={player.last_name}

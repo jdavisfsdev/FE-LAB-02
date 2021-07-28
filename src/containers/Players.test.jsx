@@ -1,10 +1,14 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { render, screen } from '@testing-library/react';
 import PlayersMain from './PlayersMain';
 
 describe('PlayersMain component', () => {
   it('renders PlayersMain', async () => {
-    render(<PlayersMain />);
+    render(
+      <Router>
+        <PlayersMain />
+      </Router>);
 
     screen.getByText('Almost...');
 

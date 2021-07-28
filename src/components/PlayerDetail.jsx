@@ -12,14 +12,13 @@ export const getPlayer = async (id) => {
 
 class PlayerDetail extends Component {
   state = {
-    loading: true,
     player: []
   };  
     
   async componentDidMount() {
     const { match } = this.props;
     const player = await getPlayer(match.params.id);
-    this.setState({ player, loading:false });
+    this.setState({ player });
   }
   render() {
     const { player } = this.state;
