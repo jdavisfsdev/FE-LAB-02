@@ -17,4 +17,10 @@ li {
     padding: 5px;
     width: fit-content;
     border: black;
+    list-style: none;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: aquamarine;
 }
