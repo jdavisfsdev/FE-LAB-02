@@ -8,8 +8,8 @@ describe('PlayersMain component', () => {
 
     screen.getByText('Almost...');
 
-    await screen.findByRole('ul');
+    const list = await screen.findByRole('list');
+    expect(list).not.toBeEmptyDOMElement;
     
-
   });
 });

@@ -23,9 +23,5 @@ export default class PlayersMain extends Component {
       const { players, loading } = this.state;
       if(loading) return <h1>Almost...</h1>;
       return <PlayerList players={players} />;
-
-          
-
-
     }
 }

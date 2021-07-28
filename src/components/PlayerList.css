@@ -1,0 +1,20 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li {
+    background-color: lightblue;
+    margin: 8px;
+    padding: 5px;
+    width: fit-content;
+    border: black;
+}
