@@ -12,7 +12,7 @@ export default class PlayersMain extends Component {
     state = {
       players: [],
       loading: true
-    };
+    };  
     
     async componentDidMount() {
       const players = await getPlayers();
@@ -21,7 +21,9 @@ export default class PlayersMain extends Component {
 
     render() {
       const { players, loading } = this.state;
+
       if(loading) return <h1>Almost...</h1>;
+
       return <PlayerList players={players} />;
     }
 }
